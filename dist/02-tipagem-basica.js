@@ -13,3 +13,8 @@ let qualquerCoisa = "Pode ser qualquer coisa";
 qualquerCoisa = 10;
 qualquerCoisa = true;
 console.log(`Qualquer coisa: ${qualquerCoisa}`);
+/*sobre tipagem implicita ou por inferencia*/
+let exemplo1 = "isso é uma string"; //ts infere que é string
+let exemplo2 = 10; //ts infere que é number
+let exemplo3; // neste caso, não tem como ts inferir em nada
+let exemplo4;
