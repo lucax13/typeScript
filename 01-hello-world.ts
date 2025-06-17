@@ -1,4 +1,4 @@
 export {};
 
-const nome: string = "BocaDEFumo";
+const nome: string = "noah";
 console.log(`Olá ${nome}! Bem vindo(a) ao TS`);
