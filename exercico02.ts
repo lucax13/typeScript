@@ -6,6 +6,7 @@ interface Produto {
   garantia: boolean;
 }
 
+function mostrarproduto({ nome, preco, garantia }: Produto);
 const produto: Produto = {
   nome: "Tenis nike",
   preco: 469.9,
