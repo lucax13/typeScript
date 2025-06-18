@@ -28,12 +28,14 @@ console.log(produtoC);
 
 separador();
 
-function verificarOperacao(sucesso: boolean) {
+type Tuplas = [number, string];
+
+function verificarOperacao(sucesso: boolean): Tuplas {
   if (sucesso) {
     return [200, "Operação realizada com sucesso!"];
   }
   return [500, "Erro inesperao no servidor"];
 }
 
-let resultadoDaOperacao = verificarOperacao(false);
-console.log(resultadoDaOperacao);
+const [resultadoDaOperacao, situcao] = verificarOperacao(true);
+console.log(resultadoDaOperacao, situcao);
